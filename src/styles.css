@@ -137,9 +137,9 @@ p {
 }
 .sub-section-alternative {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 80px;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
 }
 
 .headshot {
@@ -150,28 +150,53 @@ p {
   display: flex;
   align-items: center;
 }
-.project-card {
-  width: 300px;
-  height: 500px;
-  box-shadow: 5px 5px 25px rgb(151, 148, 148);
-  margin: 10px;
-  border-radius: 15px;
-}
 .project-container {
+  margin:0 100px 0 100px;
   display: flex;
-  justify-content: center;
-  
+  justify-content: space-around;
+  flex-direction: column;
 }
-@media only screen and (max-width: 1000px) {
-  .project-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.project-title{
+  font-size: 25px;
+  font-weight: bold;
+}
+.project-board{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin:10px;
+  padding: 25px;
+}
+.project-board:nth-child(even){
+  flex-direction: row-reverse;
+}
+.project-board:hover{
+  cursor: pointer;
+  box-shadow: 2px 2px 15px rgb(151, 150, 152);
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+}
+.project-board:not(:hover){
+  transform: scale(1);
+  transition: all 0.1s ease-in-out;
+  border-radius: 10px;
+}
+.project-details{
+  width: 700px;
+}
+.project-details p{
+  font-size: 15px;
+  font-weight: 300;
+}
+h3{
+  margin: 0;
 }
 .project-image {
-  margin-top: 25px;
-  width: 300px;
-  border-radius: 150px;
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
 }
 hr {
   margin-left: 20px;
@@ -190,6 +215,71 @@ a {
 }
 .hamburger:focus {
   outline: 0;
+}
+.skill-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  padding: 50px;
+  box-shadow: 5px 5px 25px rgb(151, 148, 148);
+  margin: 0px;
+  border-radius: 15px;
+  margin: 30px;
+}
+.skill-logo{
+  width: 60px;
+  height: 60px;
+}
+
+.skill-card:hover {
+  box-shadow: 5px 5px 25px rgb(175, 121, 232);
+  transform: scale(1.1);
+  transition: all 0.01s ease-in-out;
+  cursor: pointer;
+}
+.internship-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+.internship-card{
+  padding: 30px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 70%;
+  box-shadow: 4px 9px 29px -14px rgba(133,128,133,1);
+}
+.internship-title{
+  font-size: 23px;
+  font-weight: bold;
+}
+.key-skills-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.key-skills-container::before{
+  content: "KEY SKILLS : ";
+  font-weight: bold;
+}
+.key-skills{
+  display: flex;
+  background-color: #db56f6;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  color: white;
+}
+@media only screen and (max-width: 1000px) {
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 @media only screen and (max-width: 1000px) {
   .hamburger {
