@@ -373,6 +373,10 @@ a {
   .project-board {
     margin: 0px;
   }
+  .project-board:hover{
+    box-shadow:0;
+    transform: scale(1);
+  }
   .project-details {
     width: 100%;
   }
