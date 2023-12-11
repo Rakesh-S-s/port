@@ -336,13 +336,14 @@ a {
     justify-content: stretch;
   }
   .information{
+    margin:0 20px 0 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
   }
   .information p{
-    font-size: 28px;
+    font-size: 18px;
   }
   .sub-section-alternative {
     display: flex;
