@@ -237,7 +237,7 @@ a {
 .skill-card:hover {
   box-shadow: 5px 5px 25px rgb(175, 121, 232);
   transform: scale(1.1);
-  transition: all 0.01s ease-in-out;
+  transition: all 0.1s ease-in-out;
   cursor: pointer;
 }
 .internship-container{
@@ -307,5 +307,108 @@ a {
   }
   .logo {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .hero-text{
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:30px;
+  }
+  .hero-text h1{
+    font-size: 50px;
+  }
+  .hero-text p{
+    font-size: 20px;
+  }
+  .hero-area {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+  }
+  .button{
+    margin-top: 10px;
+  }
+  .socials {
+    display: flex;
+    justify-content: stretch;
+  }
+  .information{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .information p{
+    font-size: 28px;
+  }
+  .sub-section-alternative {
+    display: flex;
+    justify-content: space-around;
+  }
+  .skill-card{
+    height: 30px;
+    width: 30px;
+    margin: 15px;
+  }
+  .sub-section {
+    padding: 10px;
+  }
+  .headshot{  
+    display: none;
+  }
+  .sub-section-alternative {
+    padding: 0px;
+  }
+  .headshot {
+    width: 200px;
+    border-radius: 100px;
+  }
+  .project-container {
+    margin: 0px;
+  }
+  .project-board {
+    margin: 0px;
+  }
+  .project-details {
+    width: 100%;
+  }
+  .project-image {
+    width: 300px;
+    height: 220px;
+  }
+  .internship-container {
+    padding: 0px;
+  }
+  .internship-card {
+    margin: 10px;
+  }
+  .key-skills-container::before {
+    content: "KEY SKILLS :";
+  }
+  .key-skills-container {
+    justify-content: start;
+  }
+  .key-skills {
+    margin: 2px;
+  }
+  .skill-card:hover {
+    transform: scale(1);
+  }
+  .skill-card:not(:hover) {
+    transform: scale(1);
+  }
+  footer{
+    padding: 20px;
+  }
+  footer h2{
+    margin: 0;
+    font-size: 30px;
+  }
+  footer p{
+    font-size: 15px;
+    margin: 0;
   }
 }
