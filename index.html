@@ -7,6 +7,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@300;400;600;700;800&family=Shizuru&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="src/Aos/aos.css">
+<link rel="stylesheet" href="src/Kursor/kursor.css">
 <script src="https://kit.fontawesome.com/7acd8da637.js" crossorigin="anonymous"></script>
 <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,7 +19,7 @@
       <section class="hero">
           <nav>
             <!-- <img class="logo" src="src/images/logo.png" alt="Rakesh Logo" /> -->
-              <ul id="nav-list">
+              <ul id="nav-list" data-aos="fade-left" data-aos-duration="400">
                   <li><a href="#about-me">About</a></li>
                   <li><a href="#skills">Skills</a></li>
                   <li><a href="#projects">Project</a></li>
@@ -30,11 +32,11 @@
           </nav>
           <div class="hero-area">
             <div class="hero-text">
-              <h1>Rakesh Sagayarajan</h1>
-              <p>An aspiring Full Stack Developer</p>
-              <div class="button"><a href="#about-me">About Me</a></div>
+              <h1 data-aos="fade-right" data-aos-duration="800">Rakesh Sagayarajan</h1>
+              <p data-aos="fade-up" data-aos-duration="1400">An aspiring Full Stack Developer</p>
+              <div class="button" data-aos="fade-up" data-aos-duration="1900"><a href="#about-me">About Me</a></div>
           </div>
-          <div class="socials">
+          <div class="socials" data-aos="fade-up" data-aos-duration="900">
             <div><a href="https://www.facebook.com/profile.php?id=100008269810719" class="social">
               <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="50" height="50" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
             </a></div>
@@ -51,63 +53,63 @@
       </section>
       <section class="sub-section" id="about-me">
         <div class="information">
-          <h2>About Me</h2>
-          <p>Hello! 👋 I'm Rakesh, an enthusiastic and results-driven Full Stack Developer with a flair for crafting robust and scalable solutions. My journey in the tech world has been shaped by hands-on experience and a commitment to continuous learning.</p>
+          <h2 data-aos="fade-up">About Me</h2>
+          <p data-aos="fade-up" data-aos-duration="500">Hello! 👋 I'm Rakesh, an enthusiastic and results-driven Full Stack Developer with a flair for crafting robust and scalable solutions. My journey in the tech world has been shaped by hands-on experience and a commitment to continuous learning.</p>
         </div>
-        <div class="headshot-container">
+        <div class="headshot-container" data-aos="fade-up" data-aos-duration="800">
           <img class="headshot" src="src/images/profile-pic.png" alt="Rakesh S headshot">
         </div>
       </section>
       <section class="sub-section-alternative" id="skills">
-        <h2>My Expertise</h2>
+        <h2 data-aos="fade-up">My Expertise</h2>
         <div class="sub-section-alternative">
-          <div class="skill-card">
+          <div class="skill-card" data-aos="flip-left" data-aos-duration="500">
             <img class="skill-logo" src="./src/images/java.png" alt="image"/>
             <h3>Java</h3>
           </div>
-          <div class="skill-card">
+          <div class="skill-card" data-aos="flip-left" data-aos-duration="800">
             <img class="skill-logo" src="./src/images/js.png" alt="image"/>
             <h3>JavaScript</h3>
           </div>
-          <div class="skill-card">
+          <div class="skill-card" data-aos="flip-left" data-aos-duration="1100">
             <img class="skill-logo" src="./src/images/python.png" alt="image"/>
             <h3>Python</h3>
           </div>
-          <div class="skill-card">
+          <div class="skill-card" data-aos="flip-left" data-aos-duration="1400">
             <img class="skill-logo" src="./src/images/html-5.png" alt="image"/>
             <h3>HTML5</h3>
           </div>
-          <div class="skill-card">
+          <div class="skill-card" data-aos="flip-left" data-aos-duration="1700">
             <img class="skill-logo" src="./src/images/css-3.png" alt="image"/>
             <h3>CSS3</h3>
           </div>
-          <div class="skill-card">
+          <div class="skill-card" data-aos="flip-left" data-aos-duration="500">
             <img class="skill-logo" src="./src/images/physics.png" alt="image"/>
             <h3>React</h3>
           </div>
-          <div class="skill-card">
+          <div class="skill-card" data-aos="flip-left" data-aos-duration="800">
             <img class="skill-logo" src="./src/images/node-js.png" alt="image"/>
             <h3>Node.js</h3>
           </div>
-          <div class="skill-card">
+          <div class="skill-card" data-aos="flip-left" data-aos-duration="1100">
             <img class="skill-logo" src="./src/images/express.png" alt="image"/>
             <h3>Express.js</h3>
           </div>
-          <div class="skill-card">
+          <div class="skill-card" data-aos="flip-left" data-aos-duration="1400">
             <img class="skill-logo" src="./src/images/mongo.png" alt="image"/>
             <h3>MongoDB</h3>
           </div>
-          <div class="skill-card">
+          <div class="skill-card" data-aos="flip-left" data-aos-duration="1700">
             <img class="skill-logo" src="./src/images/gitlogo.png" alt="image"/>
             <h3>Git</h3>
           </div>
         </div>
       </section>
       <section class="sub-section-alternative skills" id="projects" >
-        <h2>Projects</h2>
-        <div class="project-container">
-          <div class="project-board" id="blog">
-            <div class="project-details">
+        <h2 data-aos="fade-up">Projects</h2>
+        <div class="project-container" >
+          <div class="project-board" id="blog" data-aos="fade-down">
+            <div class="project-details" >
               <h3 class="project-title">BLOG'IT</h3>
               <p>
                 This blog app acts like a social platform where users can post blogs, follow others, and customize their feed. It encourages interaction through likes, comments, and follows. Users have control over their content, being able to edit or delete their posts. It also supports RSS integration for easy sharing and uses a markdown editor for creating attractive blog content.
@@ -117,7 +119,7 @@
               <img class="project-image" src="./src/images/blog-it-remove.png" alt="image"/>
             </div>
           </div>
-          <div class="project-board" id="online">
+          <div class="project-board" id="online" data-aos="fade-down">
             <div class="project-details">
               <h3 class="project-title">ONLINE INFRINGEMENT DETECTION</h3>
               <p>We aim to find copyrighted videos online by scraping data and comparing RGB values. If a match of over 70% is found, we label it as potentially infringing. Upon detection, we report the website's URL to Google to halt ad monetization. Additionally, we've set up a digital currency system to deter unauthorized uploads to the blockchain, strengthening copyright protection measures.</p>
@@ -126,7 +128,7 @@
               <img class="project-image" src="./src/images/infringement.jpg" alt="image"/>
             </div>
           </div>
-          <div class="project-board" id="attendance">
+          <div class="project-board" id="attendance" data-aos="fade-down">
             <div class="project-details">
               <h3 class="project-title">FACE BASED ATTENDANCE</h3>
               <p>Our system is an automated face-based attendance management solution. Users input their image and name to train the system for facial recognition. Once trained, it automatically records attendance upon detecting a user's face via a camera. Powered by machine learning, it accurately tracks attendance by identifying individuals through their facial features, eliminating manual marking.</p>
@@ -135,7 +137,7 @@
               <img class="project-image" src="./src/images/attendance.png" alt="image"/>
             </div>
           </div>
-          <div class="project-board">
+          <div class="project-board" data-aos="fade-down">
             <div class="project-details" id="investment">
               <h3 class="project-title">PITCH TANK</h3>
               <p>Connecting investors and idea providers in a unified platform for seamless collaboration. This initiative revolutionizes communication, improving outcomes in idea generation, investment, and implementation. By offering a centralized space, it transforms how stakeholders interact, fostering synergy for successful ventures. This platform acts as a catalyst, ensuring efficient collaborations across the innovation lifecycle.</p>
@@ -144,7 +146,7 @@
               <img class="project-image" src="./src/images/insurance.png" alt="image"/>
             </div>
           </div>
-          <div class="project-board" id="weather">
+          <div class="project-board" id="weather" data-aos="fade-down">
             <div class="project-details">
               <h3 class="project-title">WEATHER FORECASTING APP</h3>
               <p>Utilizing the OpenWeather API, the app fetches live weather data for accurate forecasts. Users can designate and manage their chosen locations for weather updates. It notifies users via email about weather changes. Seamlessly merging weather details with personalized location settings. Keeping users informed, it ensures they're updated on weather variations in their preferred areas.</p>
@@ -156,10 +158,10 @@
         </div>
       </section>
       <section class="sub-section-alternative" id="intern">
-        <h2>Internships</h2>
+        <h2 data-aos="fade-up">Internships</h2>
         <div class="sub-section-alternative">
           <div class="internship-container">
-          <div class="internship-card">
+          <div class="internship-card" data-aos="fade-left">
             <div class="internship-title-container">
             <h3 class="internship-title">Wise Work</h3>
           </div>
@@ -180,7 +182,7 @@
               development, we have successfully created a weather forecasting website and a fully functional blogging platform, both of which are currently live
               and hosted.</p>
           </div>
-          <div class="internship-card">
+          <div class="internship-card" data-aos="fade-right">
             <h3 class="internship-title">V7 Lancers</h3>
             <p class="subtext"><strong>ROLE : </strong>Full Stack Developer</p>
             <p class="subtext"><strong>DATE : </strong>March 2021 - May 2021</p>
@@ -195,7 +197,7 @@
             <p class="subtext">During our summer internship, our team of four collaborated to create an online food ordering website where users can browse available dishes at
               various restaurants and add them to their cart. I had the opportunity to work on both the frontend and backend aspects of the project.</p>
           </div>
-          <div class="internship-card">
+          <div class="internship-card" data-aos="fade-left">
             <h3 class="internship-title">Shalom Web Solutions</h3>
             <p class="subtext"><strong>ROLE : </strong>Web Developer</p>
             <p class="subtext"><strong>DATE : </strong>Dec 2020 - Jan 2021</p>
@@ -219,5 +221,15 @@
       <p><a href="mailto:rakraj1602@gmail.com">rakraj1602@gmail.com</a></p>
     </footer>
       <script src="src/app.js"></script>
+      <script src="src/Aos/aos.js"></script>
+      <script src="src/Kursor/kursor.js"></script>
+      <script>
+        new kursor({
+          type: 1
+        })
+      </script>
+      <script>
+        AOS.init();
+      </script>
   </body>
 </html>
